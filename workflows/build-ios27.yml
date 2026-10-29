@@ -48,7 +48,7 @@ jobs:
       fail-fast: false
       matrix:
         # A13 devices with iOS 27 (remove the ones you do not want)
-        device: ["iPhone12,1", "iPhone12,3", "iPhone12,5", "iPhone12,8"]
+        device: ["iPhone12,1"]
     name: build ${{ matrix.device }} iOS ${{ inputs.version }}
     steps:
       - name: Disk space (before)
