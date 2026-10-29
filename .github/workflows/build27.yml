@@ -32,13 +32,13 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "iOS version (e.g. 27.0.1, 26.6, 18.3)"
+        description: "iOS version 27.0.1"
         required: true
         default: "27.0.1"
       kpf_set:
         description: "Kernel patch set: auto (recommended) | ios27 | ios18"
         required: false
-        default: "auto"
+        default: "ios27"
 
 jobs:
   build:
